@@ -1,0 +1,155 @@
+<h1 [ngClass]="'abc'">WELCOME TO ANGULAR</h1>
+<!-- INTERPOLATION, PROP, EVENT, TWOWAY
+<input type="text" value="{{ a }}"><br>
+<input type="text" [value]="a"><br>
+<input type="text" [(ngModel)]="a"><br>
+<button (click)="increase()">INCREASE</button>
+<button disabled="{b}">INTERPOLATION</button>
+<button [disabled]="b">PROPERTY BINDING</button> -->
+
+
+<!-- <h2>STRUCTURAL DIRECTIVES AND ANGULAR DIRECTIVES</h2>
+<h3 *ngFor="let user of users; let i=index; let f=first; let l=last; let e=even; let o=odd" [ngClass]="{'cba': false, 'abc':true}">{{ i }} | {{ user.empname }} | {{ f }} | {{ l }} | {{ o }} | {{ e }}</h3>
+<h2 [ngStyle]="{color:'red'}">hello</h2>
+
+<div *ngIf=false>
+  <h1>hello world</h1>
+</div>
+
+<input type="text" [(ngModel)]="d"><br>
+<div [ngSwitch]="d">
+  <h3 *ngSwitchCase="'one'">FIRST</h3>
+  <h3 *ngSwitchCase="'two'">SECOND</h3>
+  <h3 *ngSwitchCase="'three'">THIRD</h3>
+  <h3 *ngSwitchDefault>NOTHING</h3>
+</div>
+<h1 *ngIf=true>IF</h1>
+<h1 [hidden]=false>HIDDEN</h1>
+
+<div *ngIf="false;then thenblock else elseblock"></div>
+<ng-template #elseblock>
+  <h3>ELSE EXECUTED</h3>
+</ng-template>
+<ng-template #thenblock>
+  <h3>THEN EXECUTED</h3>
+</ng-template> -->
+
+<!-- <h1>PIPES</h1>
+
+<h2>DATE PIPES</h2>
+<h3>{{ today }}</h3>
+<h3>{{ today | date }}</h3>
+
+<h2>STRING PIPES</h2>
+<h3>{{ myname }}</h3>
+<h3>{{ myname | lowercase }}</h3>
+<h3>{{ myname | uppercase }}</h3>
+
+<h2>NUMBER PIPES</h2>
+<h3>{{ mynum }}</h3>
+<h3>{{ mynum| number }}</h3>
+<h3>{{ mynum | number:'7.1-2' }}</h3>
+
+<h2>PERCENT PIPES</h2>
+<h3>{{ myper }}</h3>
+<h3>{{ myper| percent }}</h3>
+<h3>{{ myper | percent:'7.1-2' }}</h3>
+
+<h2>CURRENCY PIPES</h2>
+<h3>{{ mycur }}</h3>
+<h3>{{ mycur| currency }}</h3>
+<h3>{{ mycur | currency:'INR' }}</h3>
+<h3>{{ mycur | currency:'INR':'code' }}</h3>
+<h3>{{ mycur | currency:'CAD' }}</h3>
+<h3>{{ mycur | currency:'CAD':'code' }}</h3>
+<h3>{{ mycur | currency:'CAD':'symbol-narrow'}}</h3> -->
+
+<!-- <h1>CUSTOM PIPE [ SEARCH FILTER PIPE ]</h1>
+<input type="text" placeholder="please enter a name" [(ngModel)]="username"><br>
+<ul>
+  <li *ngFor="let user of users | searchfilter : username">{{ user }}</li>
+</ul> -->
+
+<h1 style="text-align: center">CUSTOM PIPE [ SEARCH FILTER PIPE ] IN TABLE </h1>
+<p class="para">Please Enter A Field....<input type="text"  [(ngModel)]="itemname"></p>
+<table class="abcd">
+  <thead>
+    <tr>
+    <th class="para">COURSE</th>
+    <th class="para">FEES</th>
+    <th class="para">BRANCH</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of items | searchfilter: itemname">
+    <td class="para">{{ item.course }}</td>
+    <td class="para">{{ item.fees }}</td>
+    <td class="para">{{ item.type }}</td>
+  </tr>
+  </tbody>
+</table>
+
+<!-- PARENT TO CHILD INTERACTION
+<h2>PARENT</h2>
+<h3>the number is </h3> -->
+<!-- <button (click)="increase()">INCREMENT</button>
+<button (click)="decrease()">DECREMENT</button> -->
+
+<!-- <h1>hello world</h1>
+<app-child1>
+  <h2>h2 tag</h2>
+  <h1>h1 tag</h1>
+</app-child1> -->
+<!-- <h1>PARENT</h1>
+<button (click)="onclicked()">show child</button>
+
+<router-outlet></router-outlet> -->
+
+<!-- <div class="second">
+  <div class="first" *ngFor="let d of items">
+  <pre class="third">   NAME : {{ d.name }}     ID : {{ d.id }}</pre>
+  <pre class="third">       GENDER : {{ d.gender }}</pre>
+  </div><br>
+</div> -->
+
+<!-- <div *ngFor="let d of x">
+  <h3>{{ d.name }}</h3>
+</div>
+<h1>hello</h1>
+<h1>hello</h1> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

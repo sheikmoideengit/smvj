@@ -1,0 +1,24 @@
+{
+  "users": [
+  { "name":"Sheik",
+   "id":"100", 
+   "gender":"Male"},
+
+  { "name":"Suraj",
+   "id":"200",
+    "gender":"Male"},
+
+  { "name":"Yuvi", 
+  "id":"300", 
+  "gender":"Male"},
+  { "name":"Raj", "id":"400", "gender":"Male"},
+  { "name":"Suresh", "id":"500", "gender":"Male"},
+  { "name":"Srikanth", "id":"600", "gender":"Male"},
+  { "name":"Sharon", "id":"700", "gender":"Male"},
+  { "name":"Rohan", "id":"800", "gender":"Male"},
+  { "name":"Arun", "id":"900", "gender":"Male"},
+  { "name":"Josh", "id":"1000", "gender":"Male"}
+  
+  
+  ]}
+    
